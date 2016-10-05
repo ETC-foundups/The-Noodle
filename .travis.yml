@@ -6,7 +6,7 @@ before_install:
 script:
 - mkdir _build
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/The-Noodle.tex
-- bibtex _build/SmartÐAO
+- bibtex _build/The-Noodle
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/The-Noodle.tex
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build tex/The-Noodle.tex
 deploy:
